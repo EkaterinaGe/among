@@ -17,7 +17,7 @@ export const Status = ({ player, setCurrentPlayer }) => {
       role='button'
     >
       <h2 style={{ color: 'white' }}>{player.value}</h2>
-      <PlayerImage color={player.color}></PlayerImage>
+      <PlayerImage color={player.color} spotColor={player.spotColor}></PlayerImage>
       <h1 style={{ color: 'white' }}> {!player.status ? 'Мирный' : 'мафия'}</h1>
     </div>
   );

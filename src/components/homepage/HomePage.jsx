@@ -64,7 +64,7 @@ export const HomePage = ({ handleSubmit }) => {
         formatOptionLabel={(player, info) => (
           <div className='country-option'>
             {/* {info.context != 'value' && ( */}
-            <PlayerImage color={player.color} scale={0.5} />
+            <PlayerImage color={player.color} spotColor={player.spotColor} scale={0.5} />
             {/* )} */}
             <span>{player.label}</span>
           </div>

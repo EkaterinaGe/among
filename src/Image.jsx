@@ -1,4 +1,4 @@
-export const PlayerImage = ({ color, scale = 1 }) => {
+export const PlayerImage = ({ color, spotColor, scale = 1 }) => {
   return (
     <svg xmlns='http://www.w3.org/2000/svg' width={192 * scale} height={192 * scale} fill='none'>
       <g style={{ transform: `scale(${scale})` }}>
@@ -52,6 +52,61 @@ export const PlayerImage = ({ color, scale = 1 }) => {
             x='53.48765'
             fill={color}
           />
+        </g>
+        <g xmlns="http://www.w3.org/2000/svg">
+          <ellipse fill={spotColor} cx="57.839" cy="96.919" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="61.876" cy="33.744" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="127.497" cy="88.59" rx="4.305" ry="3.436"/>
+          <ellipse fill={spotColor} cx="78.396" cy="29.087" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="90.327" cy="37.041" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="100.728" cy="28.475" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="114.495" cy="36.123" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="104.094" cy="44.077" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="125.148" cy="46.822" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="107.765" cy="56.62" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="120.614" cy="59.68" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="109.906" cy="69.163" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="121.532" cy="76.225" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="108.071" cy="83.542" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="119.513" cy="99.169" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="97.975" cy="89.661" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="104.706" cy="100.674" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="114.495" cy="108.339" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="124.897" cy="113.829" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="114.189" cy="119.641" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="121.837" cy="130.655" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="110.212" cy="135.856" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="124.31" cy="141.555" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="111.742" cy="151.152" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="122.755" cy="156.659" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="101.646" cy="114.747" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="97.669" cy="127.29" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="90.633" cy="99.756" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="90.021" cy="112.911" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="83.597" cy="121.171" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="80.047" cy="131.267" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="79.314" cy="90.272" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="77.478" cy="103.121" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="67.076" cy="92.108" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="68.3" cy="105.866" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="71.971" cy="118.112" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="65.547" cy="127.901" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="68.912" cy="137.385" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="65.547" cy="148.704" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="57.287" cy="159.106" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="54.228" cy="146.563" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="56.981" cy="135.244" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="52.086" cy="124.23" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="60.652" cy="116.276" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="53.004" cy="108.016" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="143.252" cy="58.15" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="150.289" cy="65.186" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="142.029" cy="71.611" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="142.335" cy="85.989" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="148.147" cy="97.615" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="145.088" cy="108.934" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="149.371" cy="121.171" rx="3.234" ry="3.436"/>
+          <ellipse fill={spotColor} cx="149.677" cy="79.259" rx="3.234" ry="3.436"/>
         </g>
         <rect
           id='svg_7'

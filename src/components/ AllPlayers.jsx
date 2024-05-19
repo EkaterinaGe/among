@@ -51,7 +51,7 @@ export const AllPlayers = ({ playersInfo }) => {
     <StyleList>
       {players.map((player) => (
         <StyleElem onClick={() => handleClick(player)} key={player.label}>
-          <PlayerImage color={player.color} />
+          <PlayerImage color={player.color} spotColor={player.spotColor} />
           <h2 style={{ color: 'white', WebkitTextStroke: '0.5px black' }}>{player.label}</h2>
         </StyleElem>
       ))}
