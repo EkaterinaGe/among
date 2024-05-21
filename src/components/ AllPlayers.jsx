@@ -56,7 +56,11 @@ export const AllPlayers = ({ playersInfo }) => {
         </StyleElem>
       ))}
       {currentPlayer && (
-        <Status player={currentPlayer} setCurrentPlayer={setCurrentPlayer}></Status>
+        <Status
+          player={currentPlayer}
+          setCurrentPlayer={setCurrentPlayer}
+          players={players}
+        ></Status>
       )}
     </StyleList>
   );

@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { players as hardPlayers } from '../players';
 import Select from 'react-select';
 import { PlayerImage } from '../../Image';
+import { Link } from 'react-router-dom';
 
 const StyleBlock = styled.div`
   display: flex;
@@ -27,12 +28,7 @@ const StyleButton = styled.button`
   }
 `;
 
-export const HomePage = ({ handleSubmit }) => {
-  const [playersInfo, setPlayersInfo] = useState({
-    players: [],
-    mafia: 0,
-  });
-
+export const HomePage = ({ handleSubmit, setPlayersInfo, playersInfo }) => {
   const handle = () => {
     const mafiaCount = Number(playersInfo.mafia);
     if (playersInfo.players.length < mafiaCount * 2) {
@@ -71,7 +67,9 @@ export const HomePage = ({ handleSubmit }) => {
         )}
       />
       <Input onChange={(e) => setPlayersInfo({ ...playersInfo, mafia: e.target.value })} />
-      <StyleButton onClick={handle}>Готово</StyleButton>
+      <Link to='/AllPlayers'>
+        <StyleButton onClick={handle}>Готово</StyleButton>
+      </Link>
     </StyleBlock>
   );
 };
