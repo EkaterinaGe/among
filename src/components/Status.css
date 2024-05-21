@@ -1,9 +1,0 @@
-.StyleBlockModal {
-  width: 100vw;
-  display: flex;
-  background-image: url('../kosmonavt.jpeg');
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  position: fixed;
-}

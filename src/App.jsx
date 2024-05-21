@@ -22,7 +22,7 @@ function App() {
 
   return (
     <div className='App'>
-      <Header playersInfo={playersInfo} setPlayersInfo={setPlayersInfo} />
+      <Header />
       <Routes>
         <Route
           path='/'

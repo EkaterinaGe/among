@@ -8,15 +8,7 @@ const StyledHeader = styled.div`
   justify-content: space-around;
 `;
 
-export const Header = (setPlayersInfo, playersInfo) => {
-  //   const handleResetVotes = () => {
-  //     setPlayersInfo({
-  //       players: playersInfo.players.map((player) => {
-  //         votes: 0;
-  //       }),
-  //       mafia: playersInfo.mafia,
-  //     });
-  //   };
+export const Header = () => {
   return (
     <StyledHeader>
       <Link to='/'>
@@ -31,7 +23,6 @@ export const Header = (setPlayersInfo, playersInfo) => {
       <Link to='/DeletePlayers'>
         <button>Удаление игрока</button>
       </Link>
-      <button>Сброс голосов</button>
     </StyledHeader>
   );
 };

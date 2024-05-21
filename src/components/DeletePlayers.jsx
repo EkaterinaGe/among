@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { PlayerImage } from '../Image';
 import { useState } from 'react';
+import { ModalDeleted } from './ModalDeleted';
 
 const StyleElem = styled.div`
   display: flex;
@@ -17,7 +18,10 @@ const StyleList = styled.div`
 
 export const DeletePlayers = ({ setPlayersInfo, playersInfo }) => {
   const [isActive, setIsActive] = useState(false);
+  const [deletedPlayer, setDeletedPlayer] = useState(null);
+
   const deletePlayers = (label) => {
+    playersInfo.players.forEach((player) => player.votes = 0);
     const deletesss = playersInfo.players.filter((player) => player.label !== label);
     setPlayersInfo({
       players: deletesss,
@@ -38,6 +42,7 @@ export const DeletePlayers = ({ setPlayersInfo, playersInfo }) => {
                 onClick={(event) => {
                   event.stopPropagation();
                   deletePlayers(player.label);
+                  setDeletedPlayer(player)
                 }}
               >
                 Точно!
@@ -54,6 +59,7 @@ export const DeletePlayers = ({ setPlayersInfo, playersInfo }) => {
           )}
         </StyleElem>
       ))}
+      {deletedPlayer && <ModalDeleted deletedPlayer={deletedPlayer} setDeletedPlayer={setDeletedPlayer}/>}
     </StyleList>
   );
 };

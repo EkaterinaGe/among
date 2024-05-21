@@ -1,6 +1,6 @@
 import { Input } from './Input';
 import styled from 'styled-components';
-import React, { useState } from 'react';
+import React from 'react';
 import { players as hardPlayers } from '../players';
 import Select from 'react-select';
 import { PlayerImage } from '../../Image';
@@ -53,7 +53,6 @@ export const HomePage = ({ handleSubmit, setPlayersInfo, playersInfo }) => {
           }),
         }}
         onChange={(value) => {
-          console.log(value);
           setPlayersInfo({ ...playersInfo, players: value });
         }}
         options={hardPlayers}

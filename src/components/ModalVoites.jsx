@@ -1,5 +1,6 @@
 import { PlayerImage } from '../Image';
 import styled from 'styled-components';
+import kosmonavt from '../kosmonavt.jpeg';
 
 const ModalVotes = styled.div`
   display: flex;
@@ -10,7 +11,7 @@ const ModalVotes = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: white;
+  background-image: url(${kosmonavt});
   padding: 20px;
   border: 2px solid black;
   z-index: 1000;
@@ -26,7 +27,8 @@ const StyleElem = styled.div`
 const StyleList = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  width: 80vw;
 `;
 
 export const ModalVoites = ({ playersInfo, label, setSelectedPlayer, setPlayersInfo }) => {
